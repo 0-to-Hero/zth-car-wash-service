@@ -1,0 +1,17 @@
+server:
+  port: 8003
+spring:
+  profiles:
+    active:
+      - default
+  application:
+    name: zth-car-wash-service
+  cloud:
+    config:
+      uri: http://localhost:8001
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: "*"
